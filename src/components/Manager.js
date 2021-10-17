@@ -33,9 +33,9 @@ export default function Manager() {
     },[])
     return (
         <div>
-            <input placeholder="Name ..." onChange={(e)=>{setNewName(e.target.value)}} />
-      <input placeholder="Age ..." onChange={(e)=>{setAge(e.target.value)}} />
-      <button type="submit" onClick={createUser}>Create User</button>
+          <input placeholder="Name ..." onChange={(e)=>{setNewName(e.target.value)}} />
+          <input placeholder="Age ..." onChange={(e)=>{setAge(e.target.value)}} />
+          <button type="submit" onClick={createUser}>Create User</button>
 
       {users.map((user)=>{return<div>
         <h1>Name: {user.name}</h1>
